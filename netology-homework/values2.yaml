@@ -1,0 +1,24 @@
+mariadb:
+  dp_name: app-db2
+  image: mariadb:latest
+  password: MXFhekBXU1g= 
+  port: 3306
+
+wordpress:
+  dp_name: app-web2
+  port: 80
+  image: wordpress:6.6.2
+
+svc_db:
+  name: app-svc-db2
+
+svc_web:
+  name: app-svc-web2
+  port: 80
+
+ingress:
+  name: myingress2
+  hostname: homework.loc
+  
+secret:
+  name: mysecret2
